@@ -4,7 +4,7 @@ As part of a fascinating bit of history, [Cistercian Numerals](https://en.wikipe
 
 Once you know the pattern they are easy to read and make for cool looking graphics. So I decided as a proof of concept to make a clock that renders them. 
 
-<a href="https://kyle-west.github.io/cistercian-clock">
+<a href="https://kyle-west.github.io/cistercian-clock/">
 See the clock in action here
 <br/>
 <br/>
