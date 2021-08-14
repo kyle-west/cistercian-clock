@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cistercian Playground</title>
+  <style>
+    body {
+      background: linear-gradient(90deg, #f79b9b, #f76ff0);
+      color: white;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 50px;
+    }
+
+    label, input {
+      font-size: 20px;
+      margin: 4px;
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .v-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .separator-sm { margin-top: 25px; }
+    .separator-md { margin-top: 50px; }
+    .separator-lg { margin-top: 100px; }
+    
+    footer {
+      font-size: 12px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 4px;
+      width: 100%;
+
+      background-color: rgba(0, 0, 0, 0.3);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container separator-lg">
+    <div class="v-container">
+      <wc-cistercian id="cistercian" value="1234"></wc-cistercian>
+      <div id="decimal">1234</div>
+    </div>
+  </div>
+  
+  <div class="container separator-lg">
+    <div class="v-container">
+      <label for="rotationSpeed">Enter Value</label>
+      <input type="number" min="0" max="9999" value="1234" id="number">
+    </div>
+  </div>
+
+  <footer>
+    <i>Made with ❤️ by <a href="https://twitter.com/KyleWestCS">@KyleWestCS</a></i>
+    |
+    <i>Checkout this project on <a href="https://github.com/kyle-west/cistercian-clock">GitHub</a></i>
+    |
+    <i>See the <a href="./index.html">Clock Demo</a></i>
+  </footer>
+    
+  <script src="./wc-cistercian.js"></script>
+  <script>
+    const cistercian = document.getElementById('cistercian');
+    const decimal = document.getElementById('decimal');
+    const numberElem = document.getElementById('number');
+
+    numberElem.oninput = function ({ target: { value } }) {
+      cistercian.setAttribute('value', value)
+      decimal.innerHTML = value;
+    }
+  </script>
+</body>
+</html>
