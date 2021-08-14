@@ -5,7 +5,8 @@ As part of a fascinating bit of history, [Cistercian Numerals](https://en.wikipe
 Once you know the pattern they are easy to read and make for cool looking graphics. So I decided as a proof of concept to make a clock that renders them. 
 
 <a href="https://kyle-west.github.io/cistercian-clock">
-<h3>See the clock in action here</h3>
+See the clock in action here
+<br/>
 <br/>
 <img width="500" alt="Screen Shot of Clock" src="./meta/screenshot.png"/>
 </a>
