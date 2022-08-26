@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Cistercian Numerals | kyle-west</title>
+
+  <style>
+    body {
+      background: linear-gradient(90deg, #9BF7F4, #6F7BF7);
+      color: white;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 50px;
+    }
+
+    .container {
+      margin-top: 10%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .v-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- First four prime numbers -->
+    <div class="v-container">
+      <wc-cistercian value="2357"></wc-cistercian>
+      <div>2357</div>
+    </div>
+
+    <!-- First four powers of 2 (starting at 0 because "16" does not fit well) -->
+    <div class="v-container">
+      <wc-cistercian value="0248"></wc-cistercian>
+      <div>0248</div>
+    </div>
+
+    <!-- First four fibonacci numbers -->
+    <div class="v-container">
+      <wc-cistercian value="1123"></wc-cistercian>
+      <div>1123</div>
+    </div>
+  </div>
+  <script src="./wc-cistercian.js"></script>
+</body>
+</html>
